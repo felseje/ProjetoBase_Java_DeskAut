@@ -1,15 +1,12 @@
 package br.com.projeto.desktop.functionalities;
 
+import br.com.projeto.commons.Dsl;
 import br.com.projeto.commons.BaseTest;
-import br.com.projeto.commons.WebDSL;
 import br.com.projeto.desktop.pages.CalculadoraPage;
-import org.apache.poi.util.SystemOutLogger;
-
-import java.io.IOException;
 
 public class CalculadoraFunctionalities extends BaseTest {
 
-    private WebDSL dsl = new WebDSL(desktopDriver);
+    private Dsl dsl = new Dsl(desktopDriver);
     private CalculadoraPage calcPage = new CalculadoraPage(desktopDriver);
 
     public void inicializarCalculadora() {

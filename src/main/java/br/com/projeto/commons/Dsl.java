@@ -7,10 +7,10 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-public class WebDSL implements DSL {
+public class Dsl implements DSL {
 
     /* Construtores */
-    public WebDSL(WebDriver driver) {
+    public Dsl(WebDriver driver) {
         webDriver = driver;
         driverWait = new WebDriverWait(webDriver, 20);
     }
